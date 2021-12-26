@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	inputFilePath     = "/Users/ddepinto/go/src/github.com/DePinto/aoc-2021/input/day01.txt"
+	inputFilePath = "/Users/ddepinto/go/src/github.com/DePinto/aoc-2021/input/day01.txt"
 )
 
 func main() {
@@ -36,7 +36,7 @@ func part1(xi []int) int {
 	counter := 0
 
 	for i, j := 0, 1; j < len(xi); i, j = i+1, j+1 {
-		if xi[i] < xi[j]{
+		if xi[i] < xi[j] {
 			counter++
 		}
 	}
