@@ -5,7 +5,6 @@ import (
 	"testing"
 )
 
-
 var	intSliceEmpty = []int{}
 var	intSlice123 = []int{1,2,3}
 

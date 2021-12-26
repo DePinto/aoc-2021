@@ -5,13 +5,16 @@ import (
 	"github.com/DePinto/aoc-2021/go/pkg/utils"
 )
 
-const inputFilePath = "/Users/ddepinto/go/src/github.com/DePinto/aoc-2021/input/day01_test.txt"
+const (
+	inputFilePath = "/Users/ddepinto/go/src/github.com/DePinto/aoc-2021/input/day01.txt"
+	testInputFilePath = "/Users/ddepinto/go/src/github.com/DePinto/aoc-2021/input/day01_test.txt"
+)
 
 func main() {
 
 }
 
-func Parse(inputFilePath string) []int {
+func parse(inputFilePath string) []int {
 	xs, err := utils.NewStringSliceFromFileName(testInputFilePath)
 	if err != nil {
 		panic(err)
@@ -26,6 +29,6 @@ func Parse(inputFilePath string) []int {
 }
 
 
-func Part1(xi []int) int {
+func part1(xi []int) int {
 	return -1
 }
