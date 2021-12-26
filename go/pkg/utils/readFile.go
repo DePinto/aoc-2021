@@ -1,11 +1,10 @@
 package utils
 
-import(
+import (
 	//"fmt"
 	"bufio"
 	"os"
 )
-
 
 func NewStringSliceFromFileName(fileName string) ([]string, error) {
 	file, err := os.Open(fileName)
