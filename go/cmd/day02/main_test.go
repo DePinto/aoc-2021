@@ -1,6 +1,6 @@
 package main
 
-import(
+import (
 	"reflect"
 	"testing"
 )
@@ -8,27 +8,27 @@ import(
 var testInput = []move{
 	{
 		direction: "forward",
-		distance: 5,
+		distance:  5,
 	},
 	{
 		direction: "down",
-		distance: 5,
+		distance:  5,
 	},
 	{
 		direction: "forward",
-		distance: 8,
+		distance:  8,
 	},
 	{
 		direction: "up",
-		distance: 3,
+		distance:  3,
 	},
 	{
 		direction: "down",
-		distance: 8,
+		distance:  8,
 	},
 	{
 		direction: "forward",
-		distance: 2,
+		distance:  2,
 	},
 }
 
@@ -49,7 +49,7 @@ func TestPart1(t *testing.T) {
 	expected := testResultPartOne
 	result := part1(testInput)
 
-	if result != expected{
+	if result != expected {
 		t.Errorf("\tgot:\t%v\n\t\twanted:\t%v\n", result, expected)
 	}
 }
@@ -58,7 +58,7 @@ func TestPart2(t *testing.T) {
 	expected := testResultPartTwo
 	result := part2(testInput)
 
-	if result != expected{
+	if result != expected {
 		t.Errorf("\tgot:\t%v\n\t\twanted:\t%v\n", result, expected)
 	}
 }

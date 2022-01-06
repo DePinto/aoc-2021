@@ -2,7 +2,7 @@ package main
 
 import ()
 
-type positionWithAim struct{
+type positionWithAim struct {
 	position
 	aim int
 }
@@ -11,12 +11,12 @@ func part2(ms []move) int {
 	p := positionWithAim{
 		position: position{
 			horizontial: 0,
-		depth: 0,
+			depth:       0,
 		},
 		aim: 0,
 	}
 
-	for _, v := range ms{
+	for _, v := range ms {
 		p.move(v)
 	}
 
@@ -24,7 +24,7 @@ func part2(ms []move) int {
 }
 
 func (p *positionWithAim) move(m move) *positionWithAim {
-	switch m.direction{
+	switch m.direction {
 	case "forward":
 		p.horizontial = p.horizontial + m.distance
 		p.depth = p.depth + (p.aim * m.distance)

@@ -1,6 +1,6 @@
 package main
 
-import(
+import (
 	"fmt"
 )
 
@@ -8,9 +8,9 @@ const (
 	inputFilePath = "C:\\Users\\danie\\go\\src\\github.com\\DePinto\\aoc-2021\\input\\day02.txt"
 )
 
-type move struct{
+type move struct {
 	direction string
-	distance int
+	distance  int
 }
 
 func main() {
@@ -21,4 +21,3 @@ func main() {
 	fmt.Printf("Part 1:\t%v\n", r1)
 	fmt.Printf("Part 2:\t%v\n", r2)
 }
-

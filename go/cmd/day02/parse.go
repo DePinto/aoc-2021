@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/DePinto/aoc-2021/go/pkg/utils"
 	"strconv"
 	"strings"
-	"github.com/DePinto/aoc-2021/go/pkg/utils"
 )
 
 func parse(inputFilePath string) []move {
@@ -38,7 +38,7 @@ func newMoveFromString(s string) move {
 
 	m := move{
 		direction: direction,
-		distance: distance,
+		distance:  distance,
 	}
 
 	return m
