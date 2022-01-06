@@ -3,11 +3,15 @@ package utils
 import (
 	//"fmt"
 	"bufio"
+	//"path/filepath"
 	"os"
 )
 
 func NewStringSliceFromFileName(fileName string) ([]string, error) {
-	file, err := os.Open(fileName)
+	//filePath := filepath.Join("../input/" + fileName)
+	filePath := fileName
+	
+	file, err := os.Open(filePath)
 	if err != nil {
 		return nil, err
 	}
