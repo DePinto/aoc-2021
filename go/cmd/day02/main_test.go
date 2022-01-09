@@ -32,13 +32,13 @@ var testInput = []move{
 	},
 }
 
-var testInputFilePath = "C:\\Users\\danie\\go\\src\\github.com\\DePinto\\aoc-2021\\input\\day02_test.txt"
+var testInputFile = "day02_test.txt"
 var testResultPartOne = 150
 var testResultPartTwo = 900
 
 func TestParse(t *testing.T) {
 	expected := testInput
-	result := parse(testInputFilePath)
+	result := parse(testInputFile)
 
 	if !reflect.DeepEqual(expected, result) {
 		t.Errorf("\tgot:\t%v\n\t\twanted:\t%v\n", result, expected)

@@ -6,11 +6,11 @@ import (
 )
 
 const (
-	inputFilePath = "/Users/ddepinto/go/src/github.com/DePinto/aoc-2021/input/day01.txt"
+	inputFile = "day01.txt"
 )
 
 func main() {
-	x := parse(inputFilePath)
+	x := parse(inputFile)
 	r1 := part1(x)
 	r2 := part2(x)
 
@@ -18,8 +18,8 @@ func main() {
 	fmt.Printf("Part 2:\t%v\n", r2)
 }
 
-func parse(inputFilePath string) []int {
-	xs, err := utils.NewStringSliceFromFileName(inputFilePath)
+func parse(inputFile string) []int {
+	xs, err := utils.NewStringSliceFromFileName(inputFile)
 	if err != nil {
 		panic(err)
 	}
